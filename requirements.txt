@@ -1,0 +1,18 @@
+# TextileAI Defect Detection - Web Application
+# Required Python packages
+
+# Web Framework
+streamlit>=1.31.0
+
+# Deep Learning (compatible with Python 3.13)
+tensorflow>=2.20.0
+
+# Image Processing
+opencv-python-headless>=4.9.0
+Pillow>=10.2.0
+
+# Numerical Computing
+numpy>=1.26.0
+
+# Utilities
+python-multipart>=0.0.9

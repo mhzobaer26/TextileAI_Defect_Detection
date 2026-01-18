@@ -1,0 +1,152 @@
+╔══════════════════════════════════════════════════════════════╗
+║     🧵 TextileAI Defect Detection - QUICK START GUIDE       ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 STEP-BY-STEP INSTRUCTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: TRAIN YOUR MODEL (If not already done)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Open 'TextileAI_Defect_Detection.ipynb' and run all cells
+   
+   OR if you're on Google Colab:
+   1. Upload notebook to Colab
+   2. Run all cells
+   3. Download the .keras model file
+   4. Place it in this project folder
+
+
+STEP 2: EXPORT YOUR MODEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Run the export script:
+   
+   python export_model.py
+   
+   This will:
+   ✅ Find your trained model
+   ✅ Rename it to 'textile_defect_model.keras'
+   ✅ Verify all required files
+
+
+STEP 3: INSTALL DEPENDENCIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Create virtual environment (recommended):
+   
+   python -m venv venv
+   
+   Activate it:
+   Windows:      venv\Scripts\activate
+   Mac/Linux:    source venv/bin/activate
+   
+   Install packages:
+   
+   pip install -r requirements.txt
+
+
+STEP 4: RUN THE WEB APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Start the application:
+   
+   streamlit run app.py
+   
+   Your browser will open automatically!
+   If not, go to: http://localhost:8501
+
+
+STEP 5: TEST THE APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   1. Upload a fabric image (JPG, PNG, JPEG)
+   2. Wait for AI analysis (1-3 seconds)
+   3. View the results:
+      ✅ No Defect = Good quality
+      ❌ Defect = Quality issue detected
+   4. Check confidence scores and recommendations
+
+
+📁 FILE STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TextileAI_Defect_Detection/
+   │
+   ├── app.py                               ← Main web app
+   ├── model_utils.py                       ← Model functions
+   ├── textile_defect_model.keras           ← Your trained model
+   ├── requirements.txt                     ← Dependencies
+   ├── export_model.py                      ← Model export tool
+   ├── README.md                            ← Full documentation
+   ├── QUICK_START.txt                      ← This file
+   └── TextileAI_Defect_Detection.ipynb     ← Training notebook
+
+
+🚀 DEPLOYMENT OPTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   1. STREAMLIT CLOUD (Easiest) ⭐
+      - Push to GitHub
+      - Go to share.streamlit.io
+      - Connect repo and deploy
+   
+   2. HUGGING FACE SPACES
+      - Create Space at huggingface.co
+      - Upload files
+      - Auto-deploys
+   
+   3. RENDER
+      - Create account at render.com
+      - Connect GitHub repo
+      - Configure and deploy
+   
+   4. LOCAL NETWORK
+      streamlit run app.py --server.address=0.0.0.0
+      Access from other devices: http://YOUR_IP:8501
+
+
+🐛 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   ❌ "Model file not found"
+      → Make sure 'textile_defect_model.keras' is in the folder
+      → Run: python export_model.py
+   
+   ❌ "Import error"
+      → Activate virtual environment
+      → Run: pip install -r requirements.txt
+   
+   ❌ "Port already in use"
+      → Use different port: streamlit run app.py --server.port=8502
+   
+   ❌ "Low memory / slow"
+      → Close other applications
+      → Use smaller batch size
+
+
+📊 MODEL INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Architecture:     EfficientNetB0 (Transfer Learning)
+   Framework:        TensorFlow 2.15.0 + Keras
+   Input Size:       224 x 224 pixels
+   Classes:          Defect, No Defect
+   Web Framework:    Streamlit 1.31.0
+
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ✨ Use clear, well-lit images for best results
+   ✨ Supported formats: JPG, PNG, JPEG
+   ✨ Image quality matters - avoid blurry photos
+   ✨ Model confidence >80% is reliable
+   ✨ Manual inspection recommended for 50-80% confidence
+
+
+📞 NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   📖 Read README.md for detailed documentation
+   🐛 Check troubleshooting section above
+   💬 Create an issue on GitHub
+
+
+═══════════════════════════════════════════════════════════════
+   ⭐ Star the repo if you find it helpful!
+   📧 Contact for support or contributions
+═══════════════════════════════════════════════════════════════
+
+🎉 You're all set! Happy defect detection!
