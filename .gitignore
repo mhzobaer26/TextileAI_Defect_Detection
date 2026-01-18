@@ -1,56 +1,56 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-.venv
+# # Python
+# __pycache__/
+# *.py[cod]
+# *$py.class
+# *.so
+# .Python
+# venv/
+# env/
+# ENV/
+# .venv
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints
+# # Jupyter Notebook
+# .ipynb_checkpoints
+# *.ipynb_checkpoints
 
-# Model files (large files)
-*.h5
-*.keras
-*.pb
-*.ckpt
-*.weights
+# # Model files (large files)
+# *.h5
+# *.keras
+# *.pb
+# *.ckpt
+# *.weights
 
-# Dataset (large files)
-Dataset/
-dataset/
-fabric_data/
+# # Dataset (large files)
+# # Dataset/
+# # dataset/
+# # fabric_data/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# # IDE
+# .vscode/
+# .idea/
+# *.swp
+# *.swo
+# *~
 
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
+# # OS
+# .DS_Store
+# Thumbs.db
+# desktop.ini
 
-# Streamlit
-.streamlit/
+# # Streamlit
+# .streamlit/
 
-# Logs
-*.log
+# # Logs
+# *.log
 
-# Temporary files
-*.tmp
-temp/
-tmp/
+# # Temporary files
+# *.tmp
+# temp/
+# tmp/
 
-# Output files
-*.png
-*.jpg
-*.jpeg
-training_history.png
-augmented_samples.png
+# # Output files
+# *.png
+# *.jpg
+# *.jpeg
+# training_history.png
+# augmented_samples.png
